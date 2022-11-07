@@ -34,7 +34,7 @@ namespace Generics
             return max;
         }
 
-        // For Max Value
+        // For finding the Max Value
         public T[] value;
         public MaxNumberCheck(T[] value)
         {
