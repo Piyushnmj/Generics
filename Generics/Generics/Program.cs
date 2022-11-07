@@ -8,6 +8,9 @@
 
             int output = MaxNumberCheck.MaxIntegerNumber(11, 111, 1111);
             Console.WriteLine("\nMax integer number is: " + output);
+
+            double output2 = MaxNumberCheck.MaxFloatNumber(11.11, 111.111, 1111.1111);
+            Console.WriteLine("\nMax float number is: " + output2);
         }
     }
 }
