@@ -14,6 +14,10 @@
 
             MaxNumberCheck<string> objstring = new MaxNumberCheck<string>("11", "111", "1111");
             Console.WriteLine("\nMax integer number is: " + objstring.MaxMethod());
+
+            int[] arr = { 11, 111, 1111, 11111, 111111 };
+            MaxNumberCheck<int> objvalue = new MaxNumberCheck<int>(arr);
+            objvalue.PrintMaxValue();
         }
     }
 }
