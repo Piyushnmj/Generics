@@ -11,6 +11,9 @@
 
             double output2 = MaxNumberCheck.MaxFloatNumber(11.11, 111.111, 1111.1111);
             Console.WriteLine("\nMax float number is: " + output2);
+
+            string output3 = MaxNumberCheck.MaxStringNumber("11.11", "111.11", "1111.11");
+            Console.WriteLine("\nMax string number is: " + output3);
         }
     }
 }
