@@ -6,13 +6,15 @@
         {
             Console.WriteLine("Welcome to Generics Problems");
 
-            int output = MaxNumberCheck.MaxIntegerNumber(11, 111, 1111);
-            Console.WriteLine("\nMax integer number is: " + output);
+            MaxNumberCheck objMaxNumber = new MaxNumberCheck();
 
-            double output2 = MaxNumberCheck.MaxFloatNumber(11.11, 111.111, 1111.1111);
+            int output1 = objMaxNumber.MaxNumber<int>(11, 111, 1111);
+            Console.WriteLine("\nMax integer number is: " + output1);
+
+            float output2 = objMaxNumber.MaxNumber<float>(1111, 11111, 111111);
             Console.WriteLine("\nMax float number is: " + output2);
 
-            string output3 = MaxNumberCheck.MaxStringNumber("11.11", "111.11", "1111.11");
+            string output3 = objMaxNumber.MaxNumber<string>("11", "111", "1111");
             Console.WriteLine("\nMax string number is: " + output3);
         }
     }
